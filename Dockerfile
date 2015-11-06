@@ -3,7 +3,7 @@ MAINTAINER Jasmin Beganović <bjasko@bring.out.ba>
 
   
 RUN apt-get update -q
-RUN apt-get install -qy bind9  
+RUN apt-get install -qy bind9 iptables traceroute tcpdump 
 
 VOLUME  ["/etc/bind"]
 
