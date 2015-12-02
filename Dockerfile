@@ -1,9 +1,13 @@
-FROM ubuntu:14.04
-MAINTAINER Jasmin Beganović <bjasko@bring.out.ba>
+FROM ubuntu
+
+MAINTAINER Ernad Husremovic 
+
+# thank you Jasmin Beganovic <bjasko@bring.out.ba>
 
   
-RUN apt-get update -q
-RUN apt-get install -qy bind9  
+RUN apt-get update -q && \
+    apt-get install -qy bind9 iptables traceroute tcpdump && \
+    apt-get clean
 
 VOLUME  ["/etc/bind"]
 

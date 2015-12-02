@@ -4,7 +4,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 VOLUME_BASE=/data/dns 
 S_HOST=ns-lan
-S_DEV=eth1
+S_DEV=eth0
 S_DOMAIN=bring.out.ba
 S_HOST_IP=${smtp_ip:-192.168.168.55}
 S_DNS_HOST_IP=${dns_lan_ip:-192.168.168.55}
